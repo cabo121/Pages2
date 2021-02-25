@@ -1,6 +1,29 @@
 {% extends 'Base.html' %}
 {% block content %}
 
-<h1>Hola About</h1>
+<h2 class="p-4">Dejanos un comentario para nuestra pagina</h2><hr>
+
+<form class="row g-3 p-4">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Nombre</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Correo</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Direccion</label>
+      <input type="text" class="form-control" id="inputAddress">
+    </div>
+    <div class="col-md-12">
+        <label for="inputCity" class="form-label">Comentarios</label>
+        <textarea class="form-control btn-block"></textarea>
+    </div>
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+    
+  </form>
 
 {% endblock content %}
