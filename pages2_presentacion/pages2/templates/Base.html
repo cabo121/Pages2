@@ -3,13 +3,14 @@
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Principal</a>
+          <a class="navbar-brand" href="{% url 'Home' %}">Principal</a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" href="{% url 'Home' %}">Home</a>
-              <a class="nav-link" href="{% url 'About' %}">About</a>
+              <a class="nav-link active" href="{% url 'Home' %}">Inicio</a>
+              <a class="nav-link active" href="{% url 'content' %}">Contenido</a>
+              <a class="nav-link" href="{% url 'About' %}">Acerca de</a>
             </div>
           </div>
         </div>

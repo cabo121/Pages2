@@ -5,4 +5,7 @@ class HomePageView (TemplateView):
 
 class AboutPageView (TemplateView):
     template_name = 'About.html'
+
+class ContentPageView (TemplateView):
+    template_name = 'content.html'
     
